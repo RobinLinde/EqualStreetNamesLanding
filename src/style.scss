@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+main {
+  padding-top: 80px;
+}
+
+.list-group-heading {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+}
+
+.city-link:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}

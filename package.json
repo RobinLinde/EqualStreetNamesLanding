@@ -1,0 +1,14 @@
+{
+    "name": "equalstreetnames-landing",
+    "scripts": {
+        "start": "parcel serve ./src/index.html",
+        "build": "parcel build ./src/index.html"
+    },
+    "dependencies": {
+        "bootstrap": "^5.0.0-beta3"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.0-beta.2",
+        "parcel": "next"
+    }
+}
