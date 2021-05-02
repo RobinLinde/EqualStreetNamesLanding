@@ -8,7 +8,7 @@
         "bootstrap": "^5.0.0-beta3"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "^2.0.0-beta.2",
+        "@parcel/transformer-sass": "^2.0.0-nightly.651",
         "parcel": "next"
     }
 }
