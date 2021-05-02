@@ -45,6 +45,7 @@ import "../node_modules/bootstrap/js/dist/collapse"
 
                 cityRow.appendChild(col);
             }
+            document.body.classList.add('loaded');
         }
     };
   })();
