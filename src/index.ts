@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/js/dist/collapse";
   window.onload = function () {
     let cityRow = document.getElementById("city-row");
     const requestURL =
-      "https://raw.githubusercontent.com/RobinLinde/statistics/master/data/cities.json";
+      "https://raw.githubusercontent.com/EqualStreetNames/equalstreetnames/master/global/cities.json";
     let request = new XMLHttpRequest();
     request.open("GET", requestURL);
     request.responseType = "json";
