@@ -26,6 +26,11 @@ import "../node_modules/bootstrap/js/dist/collapse"
                 listGroup.className = "list-group";
                 col.appendChild(listGroup)
 
+                var listGroupHeading = document.createElement("li");
+                listGroupHeading.className = "list-group-item list-group-heading";
+                listGroupHeading.innerText = requestData[currentCountry][cities[0]]['name'].substr(0,4);
+                listGroup.appendChild(listGroupHeading);
+
                 console.log(currentCountry);
 
                 for (var j = 0; j < cities.length; j++) {
@@ -33,7 +38,7 @@ import "../node_modules/bootstrap/js/dist/collapse"
           
                     city = document.createElement("a");
                     city.className = "list-group-item city-link";
-                    city.text = requestData[currentCountry][currentCity]["name"];
+                    city.text = requestData[currentCountry][currentCity]["name"].split(',')[0].substr(4);
                     city.href = requestData[currentCountry][currentCity]["url"];
                     listGroup.appendChild(city);
                 }
