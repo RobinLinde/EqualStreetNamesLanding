@@ -3,6 +3,9 @@ name: Deploy
 on:
   push:
     branches: [master]
+    paths_ignore:
+      - "**.md"
+      - ".vscode/"
 
 jobs:
   build-and-deploy:
