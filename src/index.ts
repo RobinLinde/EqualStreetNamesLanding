@@ -50,7 +50,7 @@ request.onload = function () {
       listGroup.appendChild(city);
 
       var dropdown = document.createElement("ul");
-      dropdown.className = "dropdown-menu";
+      dropdown.className = "dropdown-menu shadow";
       dropdown.style.display = "none";
       dropdown.addEventListener("mouseleave", closeMenu, false);
       city.appendChild(dropdown);
