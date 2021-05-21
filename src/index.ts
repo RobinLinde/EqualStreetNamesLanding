@@ -4,7 +4,7 @@ const openContextMenu = new Event("openContextMenu");
 
 let cityRow = document.getElementById("city-row");
 
-const statisticsBase = "https://statistics-guwfgh9bg-robinlinde.vercel.app/";
+const statisticsBase = "https://statistics.equalstreetnames.eu/";
 const requestURL =
   "https://raw.githubusercontent.com/EqualStreetNames/equalstreetnames/master/global/cities.json";
 let request = new XMLHttpRequest();
