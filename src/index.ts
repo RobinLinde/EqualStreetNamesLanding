@@ -40,11 +40,15 @@ request.onload = function () {
       var currentCity = cities[j];
 
       city = document.createElement("a");
-      city.className = "list-group-item city-link";
       city.text = requestData[currentCountry][currentCity]["name"]
         .split(",")[0]
         .substr(4);
-      city.href = requestData[currentCountry][currentCity]["url"];
+      if (requestData[currentCountry][currentCity]["url"]) {
+        city.className = "list-group-item city-link";
+        city.href = requestData[currentCountry][currentCity]["url"];
+      } else {
+        city.className = "list-group-item city-link disabled";
+      }
       city.addEventListener("contextmenu", openMenu, false);
       city.addEventListener("openContextMenu", closeMenuOnOpen, false);
       listGroup.appendChild(city);
