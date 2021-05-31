@@ -3,6 +3,8 @@ import "../node_modules/bootstrap/js/dist/collapse";
 const openContextMenu = new Event("openContextMenu");
 
 const cityRow = document.getElementById("city-row");
+const cityCount = document.getElementById("cityCount");
+const countryCount = document.getElementById("countryCount");
 
 const statisticsBase = "https://statistics.equalstreetnames.eu/";
 const requestURL =
@@ -17,6 +19,7 @@ request.onload = function () {
   const countries = Object.keys(requestData);
 
   let city;
+  let cityCounter = 0;
 
   for (let i = 0; i < countries.length; i++) {
     const currentCountry = countries[i];
@@ -38,6 +41,7 @@ request.onload = function () {
 
     for (let j = 0; j < cities.length; j++) {
       const currentCity = cities[j];
+      cityCounter++;
 
       city = document.createElement("a");
       city.text = requestData[currentCountry][currentCity]["name"]
@@ -90,6 +94,9 @@ request.onload = function () {
 
     cityRow.appendChild(col);
   }
+  cityCount.innerText = cityCounter.toString();
+  countryCount.innerText = countries.length.toString();
+
   document.body.classList.add("loaded");
 };
 
