@@ -2,13 +2,17 @@
   "name": "equalstreetnames-landing",
   "scripts": {
     "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "lint": "eslint ./src/index.ts"
   },
   "dependencies": {
     "bootstrap": "^5.0.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-beta.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
     "parcel": "2.0.0-beta.3.1"
   }
 }
