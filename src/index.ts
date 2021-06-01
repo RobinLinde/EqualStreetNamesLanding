@@ -6,6 +6,40 @@ const cityRow = document.getElementById("city-row");
 const cityCount = document.getElementById("cityCount");
 const countryCount = document.getElementById("countryCount");
 
+const themeSwitch = document.querySelector("#themeSwitch") as HTMLInputElement;
+let theme!: string;
+
+function changeTheme() {
+  document.documentElement.setAttribute("data-theme", theme);
+
+  if (typeof themeSwitch !== "undefined") {
+    themeSwitch.checked = theme === "dark";
+  }
+}
+
+theme =
+  window.matchMedia("(prefers-color-scheme: dark)").matches === true
+    ? "dark"
+    : "light";
+
+changeTheme();
+
+// Update theme when browser configuration changes
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event: MediaQueryListEvent) => {
+    theme = event.matches === true ? "dark" : "light";
+
+    changeTheme();
+  });
+
+// Update theme when user click on them switch
+themeSwitch?.addEventListener("click", () => {
+  theme = themeSwitch.checked === true ? "dark" : "light";
+
+  changeTheme();
+});
+
 const statisticsBase = "https://statistics.equalstreetnames.eu/";
 const requestURL =
   "https://raw.githubusercontent.com/EqualStreetNames/equalstreetnames/master/global/cities.json";

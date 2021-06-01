@@ -18,7 +18,7 @@
 
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">EqualStreetNames</a>
           <button
@@ -34,6 +34,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    id="themeSwitch"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="themeSwitch"
+                    ><i class="fas fa-adjust"></i
+                  ></label>
+                </div>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -70,7 +82,7 @@
       </div>
     </main>
 
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3">
       <div class="container">
         <span class="text-muted"
           >Landing page maintained by

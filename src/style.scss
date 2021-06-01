@@ -1,18 +1,78 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
+@import "theme";
 @import "loader";
+
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+nav.navbar {
+  background-color: var(--bg-color-navbar);
+
+  .navbar-brand,
+  .navbar-brand:focus {
+    color: var(--text-color) !important;
+  }
+
+  .navbar-nav {
+    a.nav-link,
+    label {
+      color: var(--text-color) !important;
+    }
+
+    .nav-item {
+      display: grid;
+      align-content: center;
+      margin-left: 20px;
+    }
+  }
+}
 
 main {
   padding-top: 80px;
 }
 
 .list-group-heading {
-  background-color: #212529;
-  color: #fff;
+  background-color: var(--bg-color-navbar);
+  color: var(--text-color);
   text-align: center;
 }
 
-.city-link:hover {
-  background-color: #0d6efd;
-  color: #fff;
+.city-link {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  &:hover {
+    color: var(--text-color-dropdown-hover);
+    background-color: var(--bg-color-dropdown-hover);
+  }
+}
+
+.dropdown-menu {
+  color: var(--text-color-map-solid);
+  background-color: var(--bg-color-map-solid);
+  border-color: var(--border-color-modal);
+}
+
+.dropdown-item {
+  color: var(--text-color-map-solid);
+  &:hover {
+    color: var(--text-color-dropdown-hover);
+    background-color: var(--bg-color-dropdown-hover);
+  }
+
+  &[data-active="true"] {
+    color: var(--text-color-dropdown-hover);
+    background-color: var(--bg-color-dropdown-hover);
+  }
+}
+
+footer {
+  background-color: var(--bg-color-navbar);
+  color: var(--text-color);
 }
