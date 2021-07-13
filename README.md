@@ -1,8 +1,7 @@
 # EqualStreetNamesLanding
 
 [![CI](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/ci.yml/badge.svg)](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/ci.yml)
-[![Deploy](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/deploy.yml/badge.svg)](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/deploy.yml)
-[![Cachepurger](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/cloudflare-cache.yml/badge.svg)](https://github.com/RobinLinde/EqualStreetNamesLanding/actions/workflows/cloudflare-cache.yml)
+[![GitHub deployments](https://img.shields.io/github/deployments/RobinLinde/EqualStreetNamesLanding/Production?label=Deploy)](https://github.com/RobinLinde/EqualStreetNamesLanding/deployments/activity_log?environment=Production)
 [![wakatime](https://wakatime.com/badge/github/RobinLinde/EqualStreetNamesLanding.svg)](https://wakatime.com/badge/github/RobinLinde/EqualStreetNamesLanding)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
