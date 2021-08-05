@@ -9,7 +9,7 @@
     "bootstrap": "^5.1.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
+    "@fortawesome/fontawesome-free": "5.15.4",
     "@parcel/transformer-sass": "2.0.0-rc.0",
     "@typescript-eslint/eslint-plugin": "4.29.0",
     "@typescript-eslint/parser": "4.29.0",
