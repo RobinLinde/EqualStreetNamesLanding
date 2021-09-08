@@ -6,7 +6,7 @@
     "lint": "eslint ./src/index.ts"
   },
   "dependencies": {
-    "bootstrap": "^5.1.0"
+    "bootstrap": "^5.1.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "5.15.4",
