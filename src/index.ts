@@ -43,7 +43,7 @@ themeSwitch?.addEventListener("click", () => {
 
 const statisticsBase = "https://statistics.equalstreetnames.eu/";
 const requestURL =
-  "https://raw.githubusercontent.com/EqualStreetNames/equalstreetnames/master/global/cities.json";
+  "https://raw.githubusercontent.com/EqualStreetNames/module-global/master/cities.json";
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
