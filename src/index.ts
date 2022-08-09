@@ -1,5 +1,6 @@
 import "../node_modules/bootstrap/js/dist/collapse";
 import emojiUnicode from "emoji-unicode";
+import emojiSupported from "emoji-supported";
 
 const openContextMenu = new Event("openContextMenu");
 
@@ -69,10 +70,15 @@ request.onload = function () {
 
     const listGroupHeading = document.createElement("li");
     listGroupHeading.className = "list-group-item list-group-heading";
-    const image = getEmoji(
-      requestData[currentCountry][cities[0]]["name"].substr(0, 4)
-    );
-    listGroupHeading.appendChild(image);
+    const emoji = requestData[currentCountry][cities[0]]["name"].substr(0, 4);
+    if (emojiSupported(emoji)) {
+      listGroupHeading.innerText = requestData[currentCountry][cities[0]][
+        "name"
+      ].substr(0, 4);
+    } else {
+      const image = getEmoji(emoji);
+      listGroupHeading.appendChild(image);
+    }
     listGroup.appendChild(listGroupHeading);
 
     for (let j = 0; j < cities.length; j++) {
