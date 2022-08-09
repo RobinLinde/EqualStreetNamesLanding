@@ -86,3 +86,8 @@ footer {
     color: var(--text-muted-color) !important;
   }
 }
+
+.list-group-heading > img {
+  height: 30px;
+  width: auto;
+}
