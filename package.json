@@ -17,7 +17,7 @@
     "@parcel/css": "1.14.0",
     "@parcel/transformer-sass": "2.8.2",
     "@typescript-eslint/eslint-plugin": "5.47.0",
-    "@typescript-eslint/parser": "5.47.0",
+    "@typescript-eslint/parser": "5.47.1",
     "eslint": "8.30.0",
     "eslint-config-prettier": "8.5.0",
     "parcel": "2.8.2",
