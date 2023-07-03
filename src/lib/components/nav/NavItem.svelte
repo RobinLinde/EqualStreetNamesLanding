@@ -31,7 +31,7 @@
 	>
 </li>
 
-<style lang="scss">
+<style lang="postcss">
 	li {
 		@apply float-left text-orange-400 text-2xl underline cursor-pointer  m-2;
 

@@ -18,7 +18,7 @@
 	</footer>
 </div>
 
-<style lang="scss">
+<style lang="postcss">
 	div {
 		@apply flex flex-col min-h-screen;
 	}

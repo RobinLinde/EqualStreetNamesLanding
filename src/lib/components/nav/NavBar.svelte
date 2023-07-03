@@ -8,7 +8,7 @@
 	</ul>
 </nav>
 
-<style lang="scss">
+<style lang="postcss">
 	ul {
 		@apply list-none;
 	}

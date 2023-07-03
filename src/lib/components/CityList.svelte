@@ -33,7 +33,7 @@
 	{/each}
 </span>
 
-<style lang="scss">
+<style lang="postcss">
 	.list {
 		@apply flex flex-row flex-wrap;
 	}

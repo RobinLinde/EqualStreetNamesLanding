@@ -8,7 +8,7 @@
 	</span>
 </section>
 
-<style lang="scss">
+<style lang="postcss">
 	section {
 		@apply bg-gray-800 text-white border-t-4 border-orange-400 flex flex-row justify-between items-center p-4 px-16 w-full flex-wrap;
 	}

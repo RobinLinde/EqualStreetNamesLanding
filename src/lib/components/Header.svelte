@@ -11,7 +11,7 @@
 	</span>
 </section>
 
-<style lang="scss">
+<style lang="postcss">
 	section {
 		@apply bg-gray-800 text-white border-b-4 border-orange-400 flex flex-row justify-between items-center p-4 flex-wrap;
 	}

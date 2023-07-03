@@ -3,12 +3,12 @@ name: CI
 on:
   push:
     paths_ignore:
-      - "**.md"
-      - ".vscode/"
+      - '**.md'
+      - '.vscode/'
   pull_request:
     paths_ignore:
-      - "**.md"
-      - ".vscode/"
+      - '**.md'
+      - '.vscode/'
 
 jobs:
   build:
