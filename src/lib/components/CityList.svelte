@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { CitiesFile } from '$lib/@types/esn';
 	import cities from '@equalstreetnames/global/cities.json';
+	import CityLink from './CityLink.svelte';
 
 	const citiesfile: CitiesFile = cities;
 	const countries = Object.keys(citiesfile).map((country) => {
@@ -8,6 +9,7 @@
 			country: country,
 			cities: Object.keys(citiesfile[country]).map((city) => {
 				return {
+					country: country,
 					city: city,
 					name: citiesfile[country][city].name,
 					strippedName: citiesfile[country][city].name.split(',')[0].substring(5),
@@ -26,7 +28,7 @@
 
 			<ul>
 				{#each country.cities as city}
-					<li><a href={city.url}>{city.strippedName}</a></li>
+					<CityLink {city} />
 				{/each}
 			</ul>
 		</span>
@@ -48,25 +50,5 @@
 
 	h2 {
 		@apply text-xl w-max;
-	}
-
-	li {
-		@apply px-2 border-b border-orange-800;
-
-		&:first-child {
-			@apply border-t;
-		}
-
-		&:last-child {
-			@apply border-b-0 rounded-b-lg;
-		}
-
-		&:hover {
-			@apply bg-orange-800 text-white;
-		}
-	}
-
-	a {
-		@apply text-black dark:text-white hover:text-white no-underline inline-block w-full;
 	}
 </style>
