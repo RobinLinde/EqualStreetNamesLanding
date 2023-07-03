@@ -16,7 +16,6 @@
 			on:click={(e) => {
 				if (e.altKey) {
 					e.preventDefault();
-					console.log(e);
 					popup.classList.toggle('hidden');
 					popup.style.top = `${e.clientY}px`;
 					popup.style.left = `${e.clientX}px`;
@@ -60,7 +59,7 @@
 			@apply flex flex-row;
 
 			a {
-				@apply text-black dark:text-white hover:text-white no-underline inline-block w-full px-2;
+				@apply text-black dark:text-white hover:text-white no-underline inline-block w-full p-2 lg:py-0;
 
 				&:hover {
 					@apply bg-orange-800 text-white;
