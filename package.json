@@ -33,6 +33,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@equalstreetnames/global": "github:EqualStreetNames/module-global"
+		"@equalstreetnames/global": "github:EqualStreetNames/module-global#5f30b81"
 	}
 }
